@@ -2,7 +2,7 @@
 fetch('https://jsonplaceholder.typicode.com/posts')
    .then((res) => res.json())
    .then((posts) => {
-      const container = document.querySelector(".post-container");
+      const container = document.querySelector(".container");
       posts.forEach((post) => {
          const element = createPostElement(post);
          appendElementToContainer(container, element);
